@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
+import io.reactivex.Flowable
 import javax.inject.Inject
 
 class MainActivity : HasSupportFragmentInjector, AppCompatActivity() {
