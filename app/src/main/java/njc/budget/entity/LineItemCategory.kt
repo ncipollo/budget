@@ -5,6 +5,7 @@ enum class LineItemCategory(val categoryString: String) {
     RENT("rent"),
     UTILITY_BILL("utility"),
     STUDENT_LOANS("loans"),
+    TOTAL("total"),
     OTHER("other");
 
     companion object {
