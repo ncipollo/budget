@@ -1,6 +1,6 @@
 package njc.budget.entity
 
-interface Budget<T : LineItem> {
+interface Budget<out T : LineItem> {
     val name: String
     val lineItems: List<T>
     val totalLineItemName: String
@@ -11,6 +11,6 @@ interface Budget<T : LineItem> {
                 .let { TotalLineItem(it, totalLineItemName) }
 }
 
-data class TotalLineItem(override val amount: Money, override val name: String) : LineItem {
+private data class TotalLineItem(override val amount: Money, override val name: String) : LineItem {
     override val category: LineItemCategory = LineItemCategory.TOTAL
 }
