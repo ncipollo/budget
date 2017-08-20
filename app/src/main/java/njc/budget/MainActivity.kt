@@ -3,9 +3,11 @@ package njc.budget
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.HasSupportFragmentInjector
+import io.reactivex.Observable
 import javax.inject.Inject
 
 class MainActivity : HasSupportFragmentInjector, AppCompatActivity() {
