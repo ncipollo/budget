@@ -8,6 +8,5 @@ import java.util.*
  */
 data class DatedBudget(override val name: String,
                        override val lineItems: List<DatedLineItem>,
-                       override val totalLineItemName: String,
                        val dateRange: ClosedRange<Date>) : Budget<DatedLineItem> {
 }
