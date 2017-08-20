@@ -55,6 +55,13 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.android.support', module: 'support-core-utils'
     })
+    // Room
+    compile "android.arch.persistence.room:runtime:$arch_version"
+    compile "android.arch.persistence.room:rxjava2:$arch_version"
+    annotationProcessor "android.arch.persistence.room:compiler:$arch_version"
+    testCompile ("android.arch.persistence.room:testing:$arch_version", {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    })
     // Mockito
     androidTestCompile "org.mockito:mockito-core:$mockito_version"
     androidTestCompile "org.mockito:mockito-android:$mockito_version"

@@ -2,7 +2,7 @@
 
 buildscript {
     ext {
-        arch_version = '1.0.0-alpha1'
+        arch_version = '1.0.0-alpha5'
         app_compat_version = '25.3.1'
         constraint_layout_version = '1.0.2'
         dagger_version = '2.11'
