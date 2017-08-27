@@ -1,6 +1,6 @@
-package njc.budget.entity.planning
+package njc.budget.domain.model.planning
 
-import njc.budget.entity.Budget
+import njc.budget.domain.model.Budget
 
 /**
  * The planned budget. This will be the starting budget for each month.

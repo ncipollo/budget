@@ -1,8 +1,8 @@
 package njc.budget.repository
 
 import io.reactivex.Flowable
-import njc.budget.entity.planning.PlannedBudget
-import njc.budget.entity.planning.PlannedLineItem
+import njc.budget.domain.model.planning.PlannedBudget
+import njc.budget.domain.model.planning.PlannedLineItem
 
 
 class PlanedBudgetRepository {

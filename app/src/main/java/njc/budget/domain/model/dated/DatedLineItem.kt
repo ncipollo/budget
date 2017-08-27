@@ -1,8 +1,8 @@
-package njc.budget.entity.dated
+package njc.budget.domain.model.dated
 
-import njc.budget.entity.LineItem
-import njc.budget.entity.LineItemCategory
-import njc.budget.entity.Money
+import njc.budget.domain.model.LineItem
+import njc.budget.domain.model.LineItemCategory
+import njc.budget.domain.model.Money
 import java.util.*
 
 /**

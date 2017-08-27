@@ -1,4 +1,4 @@
-package njc.budget.entity
+package njc.budget.domain.model
 
 /**
  * Represents an expense or payment in a budget.

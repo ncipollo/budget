@@ -1,4 +1,4 @@
-package njc.budget.entity
+package njc.budget.domain.model
 
 import org.junit.Assert
 import org.junit.Test
@@ -25,6 +25,4 @@ private class SimpleBudget : Budget<SimpleLineItem> {
     override val name: String = "budget"
     override val lineItems: List<SimpleLineItem> = arrayListOf("1.00", "2.00", "-1.00")
             .map { SimpleLineItem(Money.fromString(it)) }
-
-    override val totalLineItemName: String = TOTAL
 }

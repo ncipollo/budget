@@ -1,4 +1,4 @@
-package njc.budget.entity
+package njc.budget.domain.model
 
 interface Budget<out T : LineItem> {
     val name: String

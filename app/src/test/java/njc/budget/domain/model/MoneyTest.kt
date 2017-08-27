@@ -1,4 +1,4 @@
-package njc.budget.entity
+package njc.budget.domain.model
 
 import org.junit.Test
 

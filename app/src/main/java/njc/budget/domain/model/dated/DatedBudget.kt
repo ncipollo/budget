@@ -1,6 +1,6 @@
-package njc.budget.entity.dated
+package njc.budget.domain.model.dated
 
-import njc.budget.entity.Budget
+import njc.budget.domain.model.Budget
 import java.util.*
 
 /**
