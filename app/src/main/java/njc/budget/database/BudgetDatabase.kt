@@ -2,11 +2,16 @@ package njc.budget.database
 
 import android.arch.persistence.room.Database
 import android.arch.persistence.room.RoomDatabase
-import njc.budget.domain.model.Money
-import njc.budget.domain.model.planning.PlannedLineItem
+import android.arch.persistence.room.TypeConverters
+import njc.budget.database.converters.Converters
+import njc.budget.database.dao.LineItemDao
+import njc.budget.database.entity.LineItemEntity
+
 /**
  * Primary database for storing budget information.
  */
-@Database(entities = arrayOf(Money::class, PlannedLineItem::class), version = 1)
+@Database(entities = arrayOf(LineItemEntity::class), version = 1)
+@TypeConverters(Converters::class)
 abstract class BudgetDatabase : RoomDatabase() {
+    abstract fun lineItemDao(): LineItemDao
 }

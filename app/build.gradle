@@ -58,7 +58,10 @@ dependencies {
     // Room
     compile "android.arch.persistence.room:runtime:$arch_version"
     compile "android.arch.persistence.room:rxjava2:$arch_version"
-    annotationProcessor "android.arch.persistence.room:compiler:$arch_version"
+    kapt "android.arch.persistence.room:compiler:$arch_version"
+    androidTestCompile ("android.arch.persistence.room:testing:$arch_version", {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
+    })
     testCompile ("android.arch.persistence.room:testing:$arch_version", {
         exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib'
     })
